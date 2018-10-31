@@ -1,0 +1,45 @@
+1.git add filename 把文件添加到仓库
+2.git commit -m "注释信息"  把文件提交到仓库
+
+3.git status 该命令可以让我们时刻掌握仓库当前的状态
+4.git diff 该命令可以查看修改内容
+5.git log 该命令可以显示从最近到最远的提交日志
+6.git log --pretty=oneline 该命令显示每次提交的版本号
+
+7.git reset --hard HEAD^  回退到上一版本
+8.git reset --hard HEAD^^  回退到上上版本
+9.git reset --hard HEAD~100  回退到上100个版本
+10.git reset --hard 具体版本号  回退到具体版本
+11.git reflog 记录每一次命令
+12.git checkout -- filename 回退到add或commit之前
+13.ssh-keygen -t rsa -C "邮箱" 创建SSH key 
+   ssh -T git@github.com
+14.关联远程仓库  git remote add origin 远程仓库地址
+15.删除关联  git remote rm origin
+16.拉取远程库内容到本地库 git pull origin master --allow-unrelated-histories
+17.推送本地库内容到远程库 git push origin master（git push --set-upstream origin 分支名） 
+18.从远程库克隆 git clone 远程库地址  
+
+分支：
+19.创建分支  git branch 分支名
+20.切换分支  git checkout 分支名
+21.创建与切换同时进行  git checkout -b 分支名
+22.查看分支  git branch 
+23.把dev分支的工作成果合并到master分支上  git merge dev
+24.删除分支  git branch -d 分支名
+25.删除远程分支:1.git push origin :分支名
+		2.git push origin --delete 分支名
+
+
+标签管理：
+1.git tag 标签名  打标签
+2.git tag 查看所有标签
+3.git tag 标签名 commitID   指定commitID打标签
+4.git tag -a 标签名 -m "标签信息"  指定标签信息
+5.git checkout 标签名 切换到指定标签
+6.git show 标签名   查看说明文字
+7.git tag -d 标签名 删除标签
+8.git push origin 标签名   推送标签到远程
+9.git push origin --tags  一次性推送全部尚未推送到远程的本地标签
+10.删除已经推送到远程的标签：1.先从本地删除  git tag -d 标签名
+			     2.再从远程删除  git push  origin :resf/tags/标签名
