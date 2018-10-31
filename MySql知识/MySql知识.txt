@@ -1,3 +1,6 @@
 1.排序:
 SELECT field1, field2,...fieldN FROM table_name1, table_name2...
 ORDER BY field1, [field2...] [ASC [DESC]] 其中ASC是升序，DESC是降序。
+2.NULL值处理:
+
+

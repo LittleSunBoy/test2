@@ -1,0 +1,10 @@
+1.排序:
+SELECT field1, field2,...fieldN FROM table_name1, table_name2...
+ORDER BY field1, [field2...] [ASC [DESC]] 其中ASC是升序，DESC是降序。
+2.连接的使用:
+我们已经知道MySQL使用 SQL SELECT 命令及 WHERE 子句来读取数据表中的数据,但是当提供的查询条件字段为 NULL 时，该命令可能就无法正常工作。
+为了处理这种情况，MySQL提供了三大运算符:
+IS NULL: 当列的值是NULL,此运算符返回true。
+IS NOT NULL: 当列的值不为NULL, 运算符返回true。
+<=>: 比较操作符（不同于=运算符），当比较的的两个值为NULL时返回true。
+
