@@ -1,8 +1,14 @@
 keqi is handsome man !
 hello everyone!
 keqi  hahhhhah?
+<<<<<<< HEAD
 tt2
 10.31 ĐŢ¸ÄĄŁ
 10.31 ĐŢ¸Ä2.
 hkahdk
 hrllo
+=======
+this is tt2.
+
+
+>>>>>>> a4405b71ce64e4e9e38ec1c9e30c8961d72f2b9a
